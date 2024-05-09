@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+    cryptsetup --allow-discards --perf-no_read_workqueue --perf-no_write_workqueue --persistent refresh /dev/mapper/luks*
