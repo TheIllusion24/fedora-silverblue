@@ -85,7 +85,8 @@ jobs:
           containerfiles: |
             ./Containerfile
           image: ${{ env.NAME }}
-          tags: latest
+          tags: |
+            ${{ steps.generate-tags.outputs.alias_tags }}
           labels: ${{ steps.meta.outputs.labels }}
           oci: false
 
