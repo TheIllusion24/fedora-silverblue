@@ -50,14 +50,7 @@ You can rebase an existing Fedora Silverblue installation with the following ste
   ```
   systemctl reboot
   ```
-
-(WIP) Generating ISO
   ```
-  git clone https://github.com/TheIllusion24/fedora-silverblue.git
-  cd fedora-silverblue
-  ./generate-iso.sh 
-  ```
-
 
 ## Notes
   - This image is customized for personal use.
