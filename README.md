@@ -50,7 +50,6 @@ You can rebase an existing Fedora Silverblue installation with the following ste
   ```
   systemctl reboot
   ```
-  ```
 
 ## Notes
   - This image is customized for personal use.
