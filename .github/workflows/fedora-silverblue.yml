@@ -1,4 +1,4 @@
-name: "fedora-silverblue"
+name: build
 
 env:
   NAME: "${{ github.event.repository.name }}"
