@@ -53,7 +53,6 @@ You can rebase an existing Fedora Silverblue installation with the following ste
 
 ## Notes
   - This image is customized for personal use.
-  - Script for generating iso is WIP
 
 ## License
 See [LICENSE](LICENSE)
