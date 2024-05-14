@@ -13,7 +13,7 @@ rpm-ostree override remove libavcodec-free libavfilter-free libavformat-free lib
 rpm-ostree install ffmpeg gstreamer1-plugin-libav gstreamer1-plugins-bad-free-extras gstreamer1-plugin-openh264 gstreamer1-plugins-bad-freeworld gstreamer1-plugins-ugly gstreamer1-vaapi intel-media-driver pipewire-codec-aptx
 
 # Install RPMs
-rpm-ostree install firewall-config gnome-epub-thumbnailer gnome-themes-extra gnome-tweaks google-noto-sans-balinese-fonts google-noto-sans-cjk-fonts google-noto-sans-javanese-fonts google-noto-sans-sundanese-fonts gvfs-nfs htop igt-gpu-tools lm_sensors openssl setools setroubleshoot usbguard usbguard-dbus wl-clipboard
+rpm-ostree install firewall-config gnome-epub-thumbnailer gnome-themes-extra gnome-tweaks google-noto-sans-balinese-fonts google-noto-sans-cjk-fonts google-noto-sans-javanese-fonts google-noto-sans-sundanese-fonts gvfs-nfs htop igt-gpu-tools lm_sensors openssl setools setroubleshoot smartmontools usbguard usbguard-dbus wl-clipboard
 
 # Replace Nano default editor with VIM default editor
 rpm-ostree override remove nano-default-editor --install vim-default-editor
