@@ -1,7 +1,7 @@
 # Custom Fedora Silverblue image.
 [![build](https://github.com/theillusion24/fedora-silverblue/actions/workflows/fedora-silverblue.yml/badge.svg)](https://github.com/theillusion24/fedora-silverblue/actions/workflows/fedora-silverblue.yml)
 
-This is a customized image of Fedora Silverblue with the following changes:
+This is a customized version of Fedora Silverblue.
 
 Overlayed rpm packages:
 - firewall-config (control firewalld via gui)
