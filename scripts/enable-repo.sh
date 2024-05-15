@@ -9,7 +9,6 @@ rpm-ostree install \
 
 rpm-ostree install \
     rpmfusion-free-release \
-    rpmfusion-nonfree-release \ 
-    --uninstall \
+    rpmfusion-nonfree-release --uninstall \ 
     rpmfusion-free-release \
     rpmfusion-nonfree-release
