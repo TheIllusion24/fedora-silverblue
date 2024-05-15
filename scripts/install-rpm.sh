@@ -3,7 +3,7 @@
 set -ouex pipefail
 
 # Install RPMs
-rpm-ostree install \ 
+rpm-ostree install \
     firewall-config \
     gnome-epub-thumbnailer \
     gnome-themes-extra \
