@@ -7,5 +7,5 @@ COPY scripts/ /tmp/
 COPY files/usr /usr
 
 RUN mkdir -p /var/lib/alternatives && \
-    /tmp/*.sh && \
+    /tmp/scripts/*.sh && \
     ostree container commit
