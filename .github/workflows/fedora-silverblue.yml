@@ -21,7 +21,6 @@ jobs:
   build_push:
     name: Build and push image
     runs-on: ubuntu-latest
-
     permissions:
       contents: read
       packages: write
@@ -106,10 +105,8 @@ jobs:
 
       - name: Push Image to GHCR
         uses: redhat-actions/push-to-registry@v2
-
         id: push
         if: github.event_name != 'pull_request'
-
         env:
           REGISTRY_USER: ${{ github.actor }}
           REGISTRY_PASSWORD: ${{ github.token }}
