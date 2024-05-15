@@ -2,7 +2,7 @@
 FROM quay.io/fedora-ostree-desktops/silverblue:40
 
 ## MODS
-COPY scripts/* /tmp/
+COPY scripts/ /tmp/
 
 COPY files/usr /usr
 
