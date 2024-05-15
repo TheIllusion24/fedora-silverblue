@@ -1,10 +1,17 @@
-## SOURCE IMAGE
+## Source image
 FROM quay.io/fedora-ostree-desktops/silverblue:40
 
 ## MODS
-COPY script.sh /tmp/script.sh
+COPY scripts/enable-repo.sh \
+     scripts/fix-file-permission.sh \
+     scripts/install-codecs.sh \
+     scripts/install-rpm.sh \
+     scripts/remove-rpm.sh \
+     scripts/vim-default-editor \
+        /tmp/
+
 COPY files/usr /usr
 
 RUN mkdir -p /var/lib/alternatives && \
-    /tmp/script.sh && \
+    /tmp/*.sh && \
     ostree container commit
