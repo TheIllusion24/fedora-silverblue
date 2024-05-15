@@ -7,7 +7,7 @@ COPY scripts/enable-repo.sh \
      scripts/install-codecs.sh \
      scripts/install-rpm.sh \
      scripts/remove-rpm.sh \
-     scripts/vim-default-editor \
+     scripts/vim-default-editor.sh \
         /tmp/
 
 COPY files/usr /usr
