@@ -12,5 +12,5 @@ RUN mkdir -p /var/lib/alternatives && \
     /tmp/install-codecs.sh && \
     /tmp/install-rpm.sh && \
     /tmp/remove-rpm.sh && \
-    /tmp/vim-default-editor && \
+    /tmp/vim-default-editor.sh && \
     ostree container commit
