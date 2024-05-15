@@ -2,15 +2,15 @@
 FROM quay.io/fedora-ostree-desktops/silverblue:40
 
 ## MODS
-COPY scripts/ /tmp/
+COPY scripts/ /tmp/scripts
 
 COPY files/usr /usr
 
 RUN mkdir -p /var/lib/alternatives && \
-    /tmp/enable-repo.sh && \
-    /tmp/fix-file-permission.sh && \
-    /tmp/install-codecs.sh && \
-    /tmp/install-rpm.sh && \
-    /tmp/remove-rpm.sh && \
-    /tmp/vim-default-editor.sh && \
+    /tmp/scripts/enable-repo.sh && \
+    /tmp/scripts/fix-file-permission.sh && \
+    /tmp/scripts/install-codecs.sh && \
+    /tmp/scripts/install-rpm.sh && \
+    /tmp/scripts/remove-rpm.sh && \
+    /tmp/scripts/vim-default-editor.sh && \
     ostree container commit
