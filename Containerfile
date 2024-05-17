@@ -1,5 +1,5 @@
 ## Source image
-FROM quay.io/fedora-ostree-desktops/silverblue:40
+FROM registry.fedoraproject.org/fedora-silverblue:40
 
 ## MODS
 COPY scripts/ /tmp/scripts
