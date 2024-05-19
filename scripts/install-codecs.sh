@@ -6,6 +6,7 @@ set -ouex pipefail
 rpm-ostree override remove \
     ffmpeg-free \
     libavcodec-free \
+    libavdevice-free \
     libavfilter-free \
     libavformat-free \
     libavutil-free \
