@@ -4,6 +4,7 @@ set -ouex pipefail
 
 # Remove Confict Codecs Packages
 rpm-ostree override remove \
+    ffmpeg-free \
     libavcodec-free \
     libavfilter-free \
     libavformat-free \
