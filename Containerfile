@@ -3,7 +3,6 @@ FROM quay.io/fedora-ostree-desktops/silverblue:40
 
 ## MODS
 COPY scripts/ /tmp/scripts
-
 COPY files/usr /usr
 
 RUN mkdir -p /var/lib/alternatives && \

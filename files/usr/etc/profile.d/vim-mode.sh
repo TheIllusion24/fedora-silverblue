@@ -1,4 +1,3 @@
-#
 ## Use Vi, not Emacs, style editing
 set -o vi
 #
