@@ -2,7 +2,7 @@
 
 set -ouex pipefail
 
-# Remove Confict Codecs Packages
+# Remove conflict package and install codecs
 rpm-ostree override remove \
     ffmpeg-free \
     libavcodec-free \
@@ -13,11 +13,8 @@ rpm-ostree override remove \
     libpostproc-free \
     libswresample-free \
     libswscale-free \
-    mesa-va-drivers
-
-# Install Codecs
-rpm-ostree install \
-    ffmpeg \
+    mesa-va-drivers \
+    --install ffmpeg \
     gstreamer1-plugin-libav \
     gstreamer1-plugins-bad-free-extras \
     gstreamer1-plugin-openh264 \
@@ -26,4 +23,3 @@ rpm-ostree install \
     gstreamer1-vaapi \
     intel-media-driver \
     pipewire-codec-aptx
-
