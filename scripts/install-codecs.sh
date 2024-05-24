@@ -17,7 +17,6 @@ rpm-ostree override remove \
     --install ffmpeg \
     gstreamer1-plugin-libav \
     gstreamer1-plugins-bad-free-extras \
-    gstreamer1-plugin-openh264 \
     gstreamer1-plugins-bad-freeworld \
     gstreamer1-plugins-ugly \
     gstreamer1-vaapi \
