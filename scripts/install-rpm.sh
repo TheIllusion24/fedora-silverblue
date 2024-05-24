@@ -9,7 +9,6 @@ rpm-ostree install \
     gnome-themes-extra \
     gnome-tweaks \
     google-noto-sans-balinese-fonts \
-    google-noto-sans-cjk-fonts \
     google-noto-sans-javanese-fonts \
     google-noto-sans-sundanese-fonts \
     gvfs-nfs \
