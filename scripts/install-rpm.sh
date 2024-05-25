@@ -6,7 +6,6 @@ set -ouex pipefail
 rpm-ostree install \
     firewall-config \
     lm_sensors \
-    openssl \
     setools \
     setroubleshoot \
     usbguard \
