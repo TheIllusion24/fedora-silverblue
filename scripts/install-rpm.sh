@@ -15,6 +15,7 @@ rpm-ostree install \
     gvfs-nfs \
     htop \
     igt-gpu-tools \
+    just \
     lm_sensors \
     openssl \
     setools \
