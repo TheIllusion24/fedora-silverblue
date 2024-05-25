@@ -16,7 +16,6 @@ rpm-ostree install \
     htop \
     igt-gpu-tools \
     lm_sensors \
-    python3-pip \
     openssl \
     setools \
     setroubleshoot \
