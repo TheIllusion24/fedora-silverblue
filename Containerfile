@@ -6,6 +6,7 @@ COPY scripts/ /tmp/scripts
 COPY files/usr /usr
 
 RUN mkdir -p /var/lib/alternatives && \
+    /tmp/scripts/disable-auto-update.sh && \
     /tmp/scripts/fix-file-permission.sh && \
     /tmp/scripts/install-rpm.sh && \
     /tmp/scripts/vim-default-editor.sh && \
