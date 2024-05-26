@@ -1,3 +1,0 @@
-docker:
-  ghcr.io/theillusion24/fedora-silverblue:
-    use-sigstore-attachments: true
