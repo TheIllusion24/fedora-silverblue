@@ -9,4 +9,5 @@ rpm-ostree install \
     setools \
     setroubleshoot \
     usbguard \
-    usbguard-dbus
+    usbguard-dbus \
+    wl-clipboard
