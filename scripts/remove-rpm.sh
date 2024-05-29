@@ -2,5 +2,5 @@
 
 set -ouex pipefail
 
-rpm-ostree remove \
+rpm-ostree override remove \
     adw-gtk3-theme
