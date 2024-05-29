@@ -2,5 +2,5 @@
 
 set -ouex pipefail
 
-# Remove RPMs from base image
 rpm-ostree override remove \
+    adw-gtk3-theme
