@@ -3,5 +3,4 @@
 set -ouex pipefail
 
 rpm-ostree override remove \
-    adw-gtk3-theme \
-    ublue-os-update-services
+    adw-gtk3-theme
