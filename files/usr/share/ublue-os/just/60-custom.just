@@ -22,8 +22,8 @@ set-kargs-hardening:
     echo "Hardening kargs set."
 
 # Remove all hardening boot parameters (requires reboot)
-#!/usr/bin/pkexec /usr/bin/bash
 remove-kargs-hardening:
+    #!/usr/bin/pkexec /usr/bin/bash
     rpm-ostree kargs \
           --delete-if-present="init_on_alloc=1" \
           --delete-if-present="init_on_free=1" \
@@ -44,6 +44,6 @@ remove-kargs-hardening:
           --delete-if-present="module.sig_enforce=1" \
 
 # Enable discard/trim support on encrypted drive
-#!/usr/bin/pkexec /usr/bin/bash
-set-crypt-optimize:
+optimize-crypt:
+    #!/usr/bin/pkexec /usr/bin/bash
     cryptsetup --allow-discards --perf-no_read_workqueue --perf-no_write_workqueue --persistent refresh /dev/mapper/luks*
