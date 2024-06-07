@@ -48,3 +48,9 @@ optimize-crypt:
     #!/usr/bin/pkexec /usr/bin/bash
     rpm-ostree kargs \
           --append-if-missing="rd.luks.options=discard,no-read-workqueue,no-write-workqueue"
+
+# Remove all crypt boot parameters
+remove-optimize-crypt:
+    #!/usr/bin/pkexec /usr/bin/bash
+    rpm-ostree kargs \
+          --delete-if-present="rd.luks.options=discard,no-read-workqueue,no-write-workqueue"
