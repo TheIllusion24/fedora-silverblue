@@ -43,7 +43,8 @@ remove-kargs-hardening:
           --delete-if-present="pti=on" \
           --delete-if-present="module.sig_enforce=1" \
 
-# Enable discard/trim support on encrypted drive
+# Enable discard/trim support and disable read and write workqueue on encrypted drive 
 optimize-crypt:
     #!/usr/bin/pkexec /usr/bin/bash
-    cryptsetup --allow-discards --perf-no_read_workqueue --perf-no_write_workqueue --persistent refresh /dev/mapper/luks*
+    rpm-ostree kargs \
+          --append-if-missing="rd.luks.options=discard,no-read-workqueue,no-write-workqueue"
