@@ -43,7 +43,7 @@ remove-kargs-hardening:
           --delete-if-present="pti=on" \
           --delete-if-present="module.sig_enforce=1" \
 
-# Enable discard/trim support and disable read and write workqueue on encrypted drive 
+# Enable discard/trim support and disable read and write workqueue on encrypted drive
 optimize-crypt:
     #!/usr/bin/pkexec /usr/bin/bash
     rpm-ostree kargs \
