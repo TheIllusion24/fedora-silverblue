@@ -1,4 +1,4 @@
-# Custom Fedora Silverblue image.
+# Custom Fedora Silverblue image
 [![build](https://github.com/theillusion24/fedora-silverblue/actions/workflows/build.yml/badge.svg)](https://github.com/theillusion24/fedora-silverblue/actions/workflows/build.yml)
 
 This is a customized Fedora Silverblue image.
@@ -18,4 +18,4 @@ This is a customized Fedora Silverblue image.
 
 ## License
 See [LICENSE](LICENSE)
-  
+
