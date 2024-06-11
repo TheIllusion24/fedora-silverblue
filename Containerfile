@@ -1,7 +1,11 @@
-## Source image
-FROM ghcr.io/ublue-os/silverblue-main:40
+ARG SOURCE_IMAGE="silverblue"
+ARG SOURCE_SUFFIX="-main"
+ARG SOURCE_TAG="40"
+ARG SOURCE_ORG="ublue-os"
+ARG BASE_IMAGE="ghcr.io/${SOURCE_ORG}/${SOURCE_IMAGE}${SOURCE_SUFFIX}"
 
-## MODS
+FROM ${BASE_IMAGE}:${SOURCE_TAG}
+
 COPY scripts/ /tmp/scripts
 COPY files/usr /usr
 
