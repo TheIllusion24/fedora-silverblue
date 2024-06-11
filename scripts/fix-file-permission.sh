@@ -2,5 +2,4 @@
 
 set -ouex pipefail
 
-# Fix file permission
 chmod 440 /usr/etc/sudoers.d/*
