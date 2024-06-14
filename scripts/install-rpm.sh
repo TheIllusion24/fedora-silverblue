@@ -10,4 +10,5 @@ rpm-ostree install \
     setroubleshoot \
     usbguard \
     usbguard-dbus \
+    virt-manager \
     wl-clipboard
