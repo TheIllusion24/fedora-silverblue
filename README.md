@@ -18,4 +18,3 @@ This is a customized Fedora Silverblue image.
 
 ## License
 See [LICENSE](LICENSE)
-
