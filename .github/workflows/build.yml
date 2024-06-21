@@ -9,7 +9,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: '00 17 * * *'
+    - cron: '00 05 * * *'
   push:
     branches:
       - main
