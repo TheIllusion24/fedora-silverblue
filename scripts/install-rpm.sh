@@ -8,6 +8,8 @@ rpm-ostree install \
     lm_sensors \
     setools \
     setroubleshoot \
+    rsms-inter-fonts \
+    rsms-inter-vf-fonts \
     usbguard \
     usbguard-dbus \
     wl-clipboard
