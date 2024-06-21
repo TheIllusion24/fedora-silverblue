@@ -2,7 +2,7 @@
 
 set -ouex pipefail
 
-/tmp/scripts/copr-repo.sh
+/tmp/scripts/copr-repos.sh
 
 rpm-ostree install \
     firewall-config \
