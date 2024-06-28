@@ -14,7 +14,7 @@ This is a customized Fedora Silverblue image.
   rpm-ostree rebase ostree-image-signed:docker://ghcr.io/theillusion24/fedora-silverblue-custom:latest
   ```
 ## Notes
-  - This image is customized for personal use.
+  - This image is customized for personal use only.
 
 ## License
 See [LICENSE](LICENSE)
