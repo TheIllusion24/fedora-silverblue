@@ -3,6 +3,7 @@
 set -ouex pipefail
 
 rpm-ostree install \
+    chromium \
     firewall-config \
     gnome-themes-extra \
     lm_sensors \
