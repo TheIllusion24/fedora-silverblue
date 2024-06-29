@@ -13,5 +13,6 @@ RUN mkdir -p /var/lib/alternatives && \
     /tmp/scripts/fix-file-permission.sh && \
     /tmp/scripts/install-rpm.sh && \
     /tmp/scripts/remove-rpm.sh && \
+    /tmp/scripts/set-chromium-flags.sh && \
     /tmp/scripts/vim-default-editor.sh && \
     ostree container commit
