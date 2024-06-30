@@ -8,7 +8,7 @@ FROM ${SOURCE_REGISTRY}/${SOURCE_ORG}/${SOURCE_IMAGE}${SOURCE_SUFFIX}:${SOURCE_T
 
 COPY scripts/ /tmp/scripts
 COPY files/usr /usr
-COPY files/usr/bin/brave-browse-stable /tmp
+COPY files/usr/bin/brave-browser-stable /tmp
 
 RUN mkdir -p /var/lib/alternatives && \
     /tmp/scripts/fix-file-permission.sh && \
