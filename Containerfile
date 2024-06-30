@@ -8,6 +8,7 @@ FROM ${SOURCE_REGISTRY}/${SOURCE_ORG}/${SOURCE_IMAGE}${SOURCE_SUFFIX}:${SOURCE_T
 
 COPY scripts/ /tmp/scripts
 COPY files/usr /usr
+COPY files/usr/bin/brave-browse-stable /tmp
 
 RUN mkdir -p /var/lib/alternatives && \
     /tmp/scripts/fix-file-permission.sh && \
@@ -15,5 +16,5 @@ RUN mkdir -p /var/lib/alternatives && \
     /tmp/scripts/remove-rpm.sh && \
     /tmp/scripts/set-chromium-flags.sh && \
     /tmp/scripts/vim-default-editor.sh && \
-    cp /tmp/files/usr/bin/brave-browser-stable /usr/bin && \
+    cp /tmp/brave-browser-stable /usr/bin && \
     ostree container commit
