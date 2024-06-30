@@ -24,13 +24,15 @@ EOF
 
 rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
 
+mv /usr/bin/brave-browser-stable /usr/bin/brave-browser-stable.bak
+
 rpm-ostree install brave-browser
 
 rm /etc/yum.repos.d/brave-browser.repo -f
 
 mv /var/opt/brave.com /usr/lib/brave.com
 
-cp /tmp/brave-browser-stable /usr/bin
+mv /usr/bin/brave-browser-stable.bak /usr/bin/brave-browser-stable
 
 # We do this via tmpfiles.d so that it is created by the live system.
 cat >/usr/lib/tmpfiles.d/brave-browser.conf <<EOF
