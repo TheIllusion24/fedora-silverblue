@@ -15,5 +15,4 @@ RUN mkdir -p /var/lib/alternatives && \
     /tmp/scripts/remove-rpm.sh && \
     /tmp/scripts/set-chromium-flags.sh && \
     /tmp/scripts/vim-default-editor.sh && \
-    cp files/usr/bin/brave-browser-stable /usr/bin && \
     ostree container commit
