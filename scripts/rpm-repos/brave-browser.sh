@@ -30,8 +30,6 @@ rm /etc/yum.repos.d/brave-browser.repo -f
 
 mv /var/opt/brave.com /usr/lib/brave.com
 
-cp /tmp/files/usr/bin/brave-browser-stable /usr/bin
-
 # We do this via tmpfiles.d so that it is created by the live system.
 cat >/usr/lib/tmpfiles.d/brave-browser.conf <<EOF
 L  /opt/brave.com -  -  -  -  /usr/lib/brave.com
