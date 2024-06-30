@@ -2,6 +2,8 @@
 
 set -ouex pipefail
 
+/tmp/scripts/install-brave-browser.sh
+
 rpm-ostree install \
     chromium \
     firewall-config \
