@@ -5,7 +5,6 @@ set -ouex pipefail
 /tmp/scripts/rpm-repos/brave-browser.sh
 
 rpm-ostree install \
-    chromium \
     firewall-config \
     gnome-themes-extra \
     lm_sensors \
