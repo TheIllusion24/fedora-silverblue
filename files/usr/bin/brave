@@ -6,7 +6,7 @@ BRAVE_FLAGS_FILE="/brave-flags.conf"
 if [[ -f ${USERCONFIG}${BRAVE_FLAGS_FILE} ]]; then
     FLAGS="$(cat ${USERCONFIG}${BRAVE_FLAGS_FILE} | sed 's/#.*//')"
 else
-    FLAGS="$(cat ${SYSTEMCONFIG}$BRAVE_FLAGS_FILE} | sed 's/#.*//')"
+    FLAGS="$(cat ${SYSTEMCONFIG}${BRAVE_FLAGS_FILE} | sed 's/#.*//')"
 fi
 
 /usr/bin/brave-browser-stable $@ $FLAGS
